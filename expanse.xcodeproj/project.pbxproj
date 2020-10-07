@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		121C2837252E68C7000BDAB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121C2835252E68C7000BDAB1 /* Main.storyboard */; };
 		121C2839252E68C8000BDAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121C2838252E68C8000BDAB1 /* Assets.xcassets */; };
 		121C283C252E68C8000BDAB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121C283A252E68C8000BDAB1 /* LaunchScreen.storyboard */; };
+		1245AC97252E6D1400C5A14B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */; };
+		2407790229C5D5113CA86C73 /* Pods_expanse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DEE7456E5BE04F2EA01C8F /* Pods_expanse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		121C2838252E68C8000BDAB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		121C283B252E68C8000BDAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		121C283D252E68C8000BDAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		20FC62E407DE9DE57E479B1E /* Pods-expanse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expanse.release.xcconfig"; path = "Target Support Files/Pods-expanse/Pods-expanse.release.xcconfig"; sourceTree = "<group>"; };
+		C1DEE7456E5BE04F2EA01C8F /* Pods_expanse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_expanse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9F461511C897A67A877471 /* Pods-expanse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expanse.debug.xcconfig"; path = "Target Support Files/Pods-expanse/Pods-expanse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2407790229C5D5113CA86C73 /* Pods_expanse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				121C282E252E68C7000BDAB1 /* expanse */,
 				121C282D252E68C7000BDAB1 /* Products */,
+				E75A028453FF74641DB89637 /* Pods */,
+				8A42CAE77E8CFDF334C7EC9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				121C2838252E68C8000BDAB1 /* Assets.xcassets */,
 				121C283A252E68C8000BDAB1 /* LaunchScreen.storyboard */,
 				121C283D252E68C8000BDAB1 /* Info.plist */,
+				1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */,
 			);
 			path = expanse;
+			sourceTree = "<group>";
+		};
+		8A42CAE77E8CFDF334C7EC9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1DEE7456E5BE04F2EA01C8F /* Pods_expanse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E75A028453FF74641DB89637 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE9F461511C897A67A877471 /* Pods-expanse.debug.xcconfig */,
+				20FC62E407DE9DE57E479B1E /* Pods-expanse.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 121C2840252E68C8000BDAB1 /* Build configuration list for PBXNativeTarget "expanse" */;
 			buildPhases = (
+				0A8E74822FE3CE8406F65B79 /* [CP] Check Pods Manifest.lock */,
 				121C2828252E68C7000BDAB1 /* Sources */,
 				121C2829252E68C7000BDAB1 /* Frameworks */,
 				121C282A252E68C7000BDAB1 /* Resources */,
+				FFBF3C94D6642651AC6E9DFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +154,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				121C283C252E68C8000BDAB1 /* LaunchScreen.storyboard in Resources */,
+				1245AC97252E6D1400C5A14B /* GoogleService-Info.plist in Resources */,
 				121C2839252E68C8000BDAB1 /* Assets.xcassets in Resources */,
 				121C2837252E68C7000BDAB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A8E74822FE3CE8406F65B79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-expanse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBF3C94D6642651AC6E9DFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-expanse/Pods-expanse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-expanse/Pods-expanse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-expanse/Pods-expanse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		121C2828252E68C7000BDAB1 /* Sources */ = {
@@ -283,6 +355,7 @@
 		};
 		121C2841252E68C8000BDAB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9F461511C897A67A877471 /* Pods-expanse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		121C2842252E68C8000BDAB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20FC62E407DE9DE57E479B1E /* Pods-expanse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
