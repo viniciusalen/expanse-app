@@ -14,6 +14,9 @@
 		121C2839252E68C8000BDAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121C2838252E68C8000BDAB1 /* Assets.xcassets */; };
 		121C283C252E68C8000BDAB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121C283A252E68C8000BDAB1 /* LaunchScreen.storyboard */; };
 		1245AC97252E6D1400C5A14B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */; };
+		12B0900A252E7EC5002354EC /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B09009252E7EC5002354EC /* SingUpViewController.swift */; };
+		12B0900D252E7ED2002354EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0900C252E7ED2002354EC /* LoginViewController.swift */; };
+		12B09010252E7EDF002354EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0900F252E7EDF002354EC /* HomeViewController.swift */; };
 		2407790229C5D5113CA86C73 /* Pods_expanse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DEE7456E5BE04F2EA01C8F /* Pods_expanse.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		121C283B252E68C8000BDAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		121C283D252E68C8000BDAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		12B09009252E7EC5002354EC /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		12B0900C252E7ED2002354EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		12B0900F252E7EDF002354EC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		20FC62E407DE9DE57E479B1E /* Pods-expanse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expanse.release.xcconfig"; path = "Target Support Files/Pods-expanse/Pods-expanse.release.xcconfig"; sourceTree = "<group>"; };
 		C1DEE7456E5BE04F2EA01C8F /* Pods_expanse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_expanse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9F461511C897A67A877471 /* Pods-expanse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expanse.debug.xcconfig"; path = "Target Support Files/Pods-expanse/Pods-expanse.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,14 +73,25 @@
 			children = (
 				121C282F252E68C7000BDAB1 /* AppDelegate.swift */,
 				121C2831252E68C7000BDAB1 /* SceneDelegate.swift */,
-				121C2833252E68C7000BDAB1 /* ViewController.swift */,
 				121C2835252E68C7000BDAB1 /* Main.storyboard */,
+				12B09012252E7EE7002354EC /* View Controllers */,
 				121C2838252E68C8000BDAB1 /* Assets.xcassets */,
 				121C283A252E68C8000BDAB1 /* LaunchScreen.storyboard */,
 				121C283D252E68C8000BDAB1 /* Info.plist */,
 				1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */,
 			);
 			path = expanse;
+			sourceTree = "<group>";
+		};
+		12B09012252E7EE7002354EC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				121C2833252E68C7000BDAB1 /* ViewController.swift */,
+				12B09009252E7EC5002354EC /* SingUpViewController.swift */,
+				12B0900C252E7ED2002354EC /* LoginViewController.swift */,
+				12B0900F252E7EDF002354EC /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		8A42CAE77E8CFDF334C7EC9A /* Frameworks */ = {
@@ -211,7 +228,10 @@
 			files = (
 				121C2834252E68C7000BDAB1 /* ViewController.swift in Sources */,
 				121C2830252E68C7000BDAB1 /* AppDelegate.swift in Sources */,
+				12B0900A252E7EC5002354EC /* SingUpViewController.swift in Sources */,
+				12B0900D252E7ED2002354EC /* LoginViewController.swift in Sources */,
 				121C2832252E68C7000BDAB1 /* SceneDelegate.swift in Sources */,
+				12B09010252E7EDF002354EC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
