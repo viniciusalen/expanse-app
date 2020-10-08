@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseFirestore
 
 class SingUpViewController: UIViewController {
 
@@ -34,7 +35,7 @@ class SingUpViewController: UIViewController {
     func validateFields() -> String? {
         
         if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-            return "\n\n please fill in all fields"
+            return "\n\n Please fill in all fields"
         }
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
 
@@ -85,16 +86,7 @@ class SingUpViewController: UIViewController {
                      
                 }
             }
-            
-            //transition to the homescreen
         }
-        
-        
-        
-        // create the users
-        
-        //transition to the homescreen
-        
     }
     
     
