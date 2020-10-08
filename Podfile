@@ -8,5 +8,6 @@ target 'expanse' do
   # Pods for expanse
   pod "Firebase/Auth"
   pod "Firebase/Firestore"
+  pod "Firebase/Core"
 
 end
