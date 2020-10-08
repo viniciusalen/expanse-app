@@ -92,7 +92,7 @@
 				124AB4BC252F88CD00CC3D20 /* views */,
 				1281595B252F7CC900A7DA3D /* model */,
 				1214EC3D252E880E007A3843 /* helpers */,
-				12B09012252E7EE7002354EC /* view controllers */,
+				12B09012252E7EE7002354EC /* controllers */,
 				121C2838252E68C8000BDAB1 /* Assets.xcassets */,
 				121C283D252E68C8000BDAB1 /* Info.plist */,
 				1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */,
@@ -118,7 +118,7 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		12B09012252E7EE7002354EC /* view controllers */ = {
+		12B09012252E7EE7002354EC /* controllers */ = {
 			isa = PBXGroup;
 			children = (
 				121C282F252E68C7000BDAB1 /* AppDelegate.swift */,
@@ -130,7 +130,7 @@
 				12828DAF252F26030079FE7C /* ExpensesViewController.swift */,
 				12828DB3252F29020079FE7C /* IncomesViewController.swift */,
 			);
-			path = "view controllers";
+			path = controllers;
 			sourceTree = "<group>";
 		};
 		8A42CAE77E8CFDF334C7EC9A /* Frameworks */ = {
