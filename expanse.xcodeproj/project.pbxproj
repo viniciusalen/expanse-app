@@ -14,8 +14,11 @@
 		121C2837252E68C7000BDAB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121C2835252E68C7000BDAB1 /* Main.storyboard */; };
 		121C2839252E68C8000BDAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121C2838252E68C8000BDAB1 /* Assets.xcassets */; };
 		121C283C252E68C8000BDAB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121C283A252E68C8000BDAB1 /* LaunchScreen.storyboard */; };
-		122D3D68252E9CA200EFFC4B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122D3D67252E9CA200EFFC4B /* Constants.swift */; };
 		1245AC97252E6D1400C5A14B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */; };
+		1281595D252F7CDF00A7DA3D /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1281595C252F7CDF00A7DA3D /* Expense.swift */; };
+		12828DB0252F26030079FE7C /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12828DAF252F26030079FE7C /* ExpensesViewController.swift */; };
+		12828DB4252F29020079FE7C /* IncomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12828DB3252F29020079FE7C /* IncomesViewController.swift */; };
+		129BADBE252F8D4200FECF4F /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129BADBD252F8D4200FECF4F /* ExpenseTableViewCell.swift */; };
 		12B0900A252E7EC5002354EC /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B09009252E7EC5002354EC /* SingUpViewController.swift */; };
 		12B0900D252E7ED2002354EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0900C252E7ED2002354EC /* LoginViewController.swift */; };
 		12B09010252E7EDF002354EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B0900F252E7EDF002354EC /* HomeViewController.swift */; };
@@ -32,8 +35,11 @@
 		121C2838252E68C8000BDAB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		121C283B252E68C8000BDAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		121C283D252E68C8000BDAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		122D3D67252E9CA200EFFC4B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1281595C252F7CDF00A7DA3D /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		12828DAF252F26030079FE7C /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		12828DB3252F29020079FE7C /* IncomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesViewController.swift; sourceTree = "<group>"; };
+		129BADBD252F8D4200FECF4F /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
 		12B09009252E7EC5002354EC /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 		12B0900C252E7ED2002354EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		12B0900F252E7EDF002354EC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -54,13 +60,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1214EC3D252E880E007A3843 /* Helpers */ = {
+		1214EC3D252E880E007A3843 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
 				1214EC3E252E8820007A3843 /* Utilities.swift */,
-				122D3D67252E9CA200EFFC4B /* Constants.swift */,
 			);
-			path = Helpers;
+			path = helpers;
 			sourceTree = "<group>";
 		};
 		121C2823252E68C7000BDAB1 = {
@@ -84,28 +89,48 @@
 		121C282E252E68C7000BDAB1 /* expanse */ = {
 			isa = PBXGroup;
 			children = (
-				1214EC3D252E880E007A3843 /* Helpers */,
-				121C282F252E68C7000BDAB1 /* AppDelegate.swift */,
-				121C2831252E68C7000BDAB1 /* SceneDelegate.swift */,
-				121C2835252E68C7000BDAB1 /* Main.storyboard */,
-				12B09012252E7EE7002354EC /* View Controllers */,
+				124AB4BC252F88CD00CC3D20 /* views */,
+				1281595B252F7CC900A7DA3D /* model */,
+				1214EC3D252E880E007A3843 /* helpers */,
+				12B09012252E7EE7002354EC /* view controllers */,
 				121C2838252E68C8000BDAB1 /* Assets.xcassets */,
-				121C283A252E68C8000BDAB1 /* LaunchScreen.storyboard */,
 				121C283D252E68C8000BDAB1 /* Info.plist */,
 				1245AC96252E6D1400C5A14B /* GoogleService-Info.plist */,
 			);
 			path = expanse;
 			sourceTree = "<group>";
 		};
-		12B09012252E7EE7002354EC /* View Controllers */ = {
+		124AB4BC252F88CD00CC3D20 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				121C2835252E68C7000BDAB1 /* Main.storyboard */,
+				121C283A252E68C8000BDAB1 /* LaunchScreen.storyboard */,
+				129BADBD252F8D4200FECF4F /* ExpenseTableViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		1281595B252F7CC900A7DA3D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1281595C252F7CDF00A7DA3D /* Expense.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		12B09012252E7EE7002354EC /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				121C282F252E68C7000BDAB1 /* AppDelegate.swift */,
+				121C2831252E68C7000BDAB1 /* SceneDelegate.swift */,
 				121C2833252E68C7000BDAB1 /* ViewController.swift */,
 				12B09009252E7EC5002354EC /* SingUpViewController.swift */,
 				12B0900C252E7ED2002354EC /* LoginViewController.swift */,
 				12B0900F252E7EDF002354EC /* HomeViewController.swift */,
+				12828DAF252F26030079FE7C /* ExpensesViewController.swift */,
+				12828DB3252F29020079FE7C /* IncomesViewController.swift */,
 			);
-			path = "View Controllers";
+			path = "view controllers";
 			sourceTree = "<group>";
 		};
 		8A42CAE77E8CFDF334C7EC9A /* Frameworks */ = {
@@ -242,12 +267,15 @@
 			files = (
 				121C2834252E68C7000BDAB1 /* ViewController.swift in Sources */,
 				121C2830252E68C7000BDAB1 /* AppDelegate.swift in Sources */,
+				12828DB0252F26030079FE7C /* ExpensesViewController.swift in Sources */,
 				1214EC3F252E8820007A3843 /* Utilities.swift in Sources */,
 				12B0900A252E7EC5002354EC /* SingUpViewController.swift in Sources */,
+				1281595D252F7CDF00A7DA3D /* Expense.swift in Sources */,
+				12828DB4252F29020079FE7C /* IncomesViewController.swift in Sources */,
 				12B0900D252E7ED2002354EC /* LoginViewController.swift in Sources */,
+				129BADBE252F8D4200FECF4F /* ExpenseTableViewCell.swift in Sources */,
 				121C2832252E68C7000BDAB1 /* SceneDelegate.swift in Sources */,
 				12B09010252E7EDF002354EC /* HomeViewController.swift in Sources */,
-				122D3D68252E9CA200EFFC4B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +430,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusalencar.expanse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusalencar.expense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusalencar.expanse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viniciusalencar.expense;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
